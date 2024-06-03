@@ -1,5 +1,4 @@
 'use client';
-
 import { useState } from 'react';
 import Link from 'next/link';
 
@@ -12,7 +11,7 @@ const DropDown = ({ buttonText, items }) => {
 
   return (
     <main>
-      <button onClick={toggleDropDown} className="">
+      <button onClick={toggleDropDown} className="hover:text-blue-500">
         {buttonText}
       </button>
       {isOpen && (

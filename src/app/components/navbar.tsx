@@ -12,15 +12,12 @@ export default function NavBarFn() {
   ];
   const helloItems = [{ text: 'ebal' }, { text: 'ebal3' }, { text: 'ebal3' }];
   return (
-    <main>
+    <main className="container mx-auto pt-3">
       <nav className="flex items-center justify-between">
         <Link href="/">
           <Image src={Marico} alt="Marico" width={196} height={56}></Image>
         </Link>
         <ul className="flex gap-5">
-          {/* <li className="hover:text-blue-500">
-            <Link href="/">Use Cases</Link>
-          </li> */}
           <Hello myText="Ebal Dremal" items={helloItems} />
           <DropDown buttonText="Use Caces" items={dropdownItems} />
           <li className="hover:text-blue-500">

@@ -11,7 +11,9 @@ const Hello = ({ myText, items }) => {
 
   return (
     <ul>
-      <button onClick={toggleDropDown}>{myText}</button>
+      <button className="hover:text-blue-500" onClick={toggleDropDown}>
+        {myText}
+      </button>
       {isOpen && (
         <ul>
           {items.map((item, index) => (
